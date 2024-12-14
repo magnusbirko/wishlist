@@ -37,7 +37,6 @@ body {
   justify-content: center;
   /* flex: 0 0 50px; */
   background: var(--red);
-  height: 50px;
 }
 
 .content-body {
@@ -89,7 +88,7 @@ body {
   flex: 1;
   flex-grow: 0;
   justify-content: space-between;
-  align-items: center;
+
   padding: 20px;
 }
 
@@ -99,6 +98,7 @@ body {
   align-items: center;
   max-width: 250px;
   min-width: 100px;
+  justify-content: center;
 }
 
 a {
