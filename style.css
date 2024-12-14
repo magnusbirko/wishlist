@@ -35,8 +35,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 50px;
+  /* flex: 0 0 50px; */
   background: var(--red);
+  height: 50px;
 }
 
 .content-body {
@@ -69,12 +70,12 @@ body {
   padding: 20px;
 }
 
-.content-body .sidenav {
-  /* background: var(--lightRed); */
+/* .content-body .sidenav {
+  background: var(--lightRed);
 }
 .content-body .ads {
-  /* background: var(--lightRed); */
-}
+  background: var(--lightRed);
+} */
 
 .wishes {
   display: flex;
@@ -93,10 +94,11 @@ body {
 }
 
 .wishText {
-  display: inline-block;
+  display: flex;
+  flex-grow: 1;
   align-items: center;
   max-width: 250px;
-  min-width: 250px;
+  min-width: 100px;
 }
 
 a {
