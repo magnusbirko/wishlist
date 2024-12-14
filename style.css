@@ -41,7 +41,7 @@ body {
 
 .content-body {
   /*   flex: 1 1 auto; */
-  flex-grow: 1; /* equl to: height: calc(100vh - 100px); */
+  flex-grow: 1; /* equal to: height: calc(100vh - 100px); */
   display: flex;
   flex-direction: row;
 }
@@ -50,22 +50,30 @@ body {
   /*   flex: 1 1 auto; */
   /* flex-grow: 1; width: calc(100% - 200px); */
   flex-grow: 0;
-  overflow: auto;
+  overflow: clip;
   background: var(--lightGreen);
   width: 700px;
 }
 .content-body .sidenav,
 .content-body .ads {
   /* flex: 0 0 200px; */
+  display: flex;
   flex: 1;
-
-  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow: clip;
 }
+.content-body img {
+  padding: 20px;
+}
+
 .content-body .sidenav {
-  background: var(--lightRed);
+  /* background: var(--lightRed); */
 }
 .content-body .ads {
-  background: var(--lightRed);
+  /* background: var(--lightRed); */
 }
 
 .wishes {
@@ -78,7 +86,7 @@ body {
 .wish {
   display: flex;
   flex: 1;
-  flex-grow: 1;
+  flex-grow: 0;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
