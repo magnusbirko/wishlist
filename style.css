@@ -88,7 +88,7 @@ body {
   flex: 1;
   flex-grow: 0;
   justify-content: space-between;
-
+  align-items: center;
   padding: 20px;
 }
 
